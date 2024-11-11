@@ -1,13 +1,16 @@
 const { TelegramClient, Api} = require("telegram");
 const { StringSession } = require("telegram/sessions");
 const input = require("input");
-const {NewMessage} = require("telegram/events");
+const { NewMessage } = require("telegram/events");
 
 
 
- // write your own apiId
- // write your own apiHash
- // fill this later with the value from session.save()
+
+const apiId = ('Enter your own apiId')
+const apiHash = ('Enter your own apiHash')
+const stringSession = new StringSession(""); // fill this later with the value from session.save()
+    
+
 
 (async () => {
     console.log("Loading interactive example...");
